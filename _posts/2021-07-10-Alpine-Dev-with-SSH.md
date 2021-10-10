@@ -1,5 +1,5 @@
 Dockerfile
-```
+```Dockerfile
 FROM alpine:3.12
 MAINTAINER Arvind Rawat <arvindr226@gmail.com>
 
