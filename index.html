@@ -32,4 +32,7 @@ title: Home
   {% endif %}
 </div>
 
-{% include_relative README.md %}
+<div>
+{% capture p1 %}{% include README.md %}{% endcapture %}
+{{ p1 | markdownify }}
+</div>
