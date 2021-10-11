@@ -45,9 +45,9 @@ version: 3.0.0
 nav:
   - title: Blog
     url: /archive
-
   - title: About
     url: /about
-
   - title: Code
     url: https://github.com/yorkane
+  - title: 404
+    url: /404
