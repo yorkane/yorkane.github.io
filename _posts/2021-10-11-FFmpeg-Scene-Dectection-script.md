@@ -49,3 +49,6 @@ pip install opencv-python
 pip install imutils
 python3 b.py --images ../../HEVC/video_name/scene/ --threshold 22
 ```
+
+
+# Script attention
