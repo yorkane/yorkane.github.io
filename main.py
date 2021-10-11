@@ -9,7 +9,7 @@ MD_HEAD = """## Gitblog
 My personal blog using issues and GitHub Actions
 """
 
-BACKUP_DIR = "BACKUP"
+BACKUP_DIR = "_posts"
 ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
 TODO_ISSUES_LABELS = ["TODO"]
@@ -227,8 +227,9 @@ def main(token, repo_name, issue_number=None, dir_name=BACKUP_DIR):
 
 
 def save_issue(issue, me, dir_name=BACKUP_DIR):
+    time = format_time(issue.created_at)
     md_name = os.path.join(
-        dir_name, f"{issue.number}_{issue.title.replace(' ', '.')}.md"
+        dir_name, f"{time}-{issue.title.replace(' ', '.')}_[{issue.number}].md"
     )
     with open(md_name, "w") as f:
         f.write(f"# [{issue.title}]({issue.html_url})\n\n")

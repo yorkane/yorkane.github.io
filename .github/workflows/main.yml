@@ -55,7 +55,7 @@ jobs:
         with:
           github-token: ${{ secrets.G_T }}
           commit-message: "Refresh README AND BACK UP"
-          files: README.md BACKUP/
+          files: README.md _posts/
           rebase: 'true'
           name: ${{ env.GITHUB_NAME }}
           email: ${{ env.GITHUB_EMAIL }}
