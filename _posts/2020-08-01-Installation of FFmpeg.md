@@ -31,3 +31,5 @@ rm -rf ~/ffmpeg_build ~/ffmpeg_sources ~/bin/{ffmpeg,ffprobe,ffserver,lame,nasm,
 # yum erase autoconf automake bzip2 cmake freetype-devel gcc gcc-c++ git libtool mercurial zlib-devel
 hash -r
 ```
+
+EOF
