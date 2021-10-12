@@ -2,6 +2,7 @@ name: Life's code
 description: Code of life
 url: https://yorkane.github.io/
 github: 'yorkane'
+gitlab: 'yorkane/yorkane.github.io'
 gaaccount: ''
 comments: false
 highlighter: rouge
